@@ -18,13 +18,6 @@ test('creates a random potion object', () => {
     expect(potion.value).toEqual(expect.any(Number));
   });
 
-  test('adds a potion to the inventory', () => {
-    const player = new Player('Dave');
-    const oldCount = player.inventory.length;
   
-    player.addPotion(new Potion());
-  
-    expect(player.inventory.length).toBeGreaterThan(oldCount);
-  });
 
   
